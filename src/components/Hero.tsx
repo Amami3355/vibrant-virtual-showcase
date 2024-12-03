@@ -14,7 +14,7 @@ const Hero = () => {
           className="w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-white shadow-xl"
         >
           <img 
-            src="/profile-photo.png" 
+            src="/profile-photo.jpg" 
             alt="Mourad Amami"
             className="w-full h-full object-cover"
           />
