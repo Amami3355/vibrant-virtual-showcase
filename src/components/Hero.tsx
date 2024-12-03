@@ -11,7 +11,7 @@ const Hero = () => {
           Full Stack Engineer
         </h2>
         <p className="text-lg md:text-xl max-w-2xl mx-auto animate-fade-up opacity-80">
-          Building beautiful, scalable web applications with modern technologies
+          Building beautiful, scalable web and mobile applications with modern technologies
         </p>
       </div>
     </div>
