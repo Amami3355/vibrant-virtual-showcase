@@ -1,4 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { useTranslation } from "react-i18next";
 
 const projects = [
   {
@@ -19,11 +20,13 @@ const projects = [
 ];
 
 const Projects = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="py-20 bg-gray-50" id="projects">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-bold text-center mb-12 text-portfolio-primary">
-          Featured Projects
+          {t('projects.title')}
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (

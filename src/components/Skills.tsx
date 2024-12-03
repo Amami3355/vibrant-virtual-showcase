@@ -1,3 +1,5 @@
+import { useTranslation } from "react-i18next";
+
 const skills = [
   { category: "Frontend", items: ["React", "TypeScript", "Tailwind CSS", "Next.js"] },
   { category: "Backend", items: ["Node.js", "Python", "Java", "PostgreSQL"] },
@@ -6,11 +8,13 @@ const skills = [
 ];
 
 const Skills = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="py-20 bg-white" id="skills">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-bold text-center mb-12 text-portfolio-primary">
-          Skills & Expertise
+          {t('skills.title')}
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {skills.map((skillGroup, index) => (
